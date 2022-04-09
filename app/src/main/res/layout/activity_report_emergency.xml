@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context=".activity.SuggestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            style="@style/testHintStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="@string/describe_the_location_and_nature_of_the_emergency" />
+
+
+        <EditText
+            android:id="@+id/ed_description"
+            style="@style/editTextStyle"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:maxLines="100"
+            android:hint="@string/enter_report_an_emergency"
+            android:layout_marginTop="20dp"
+            android:minHeight="120dp"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            style="@style/buttonStyle"
+            android:layout_margin="30dp"
+            android:text="@string/send" />
+
+    </LinearLayout>
+</ScrollView>

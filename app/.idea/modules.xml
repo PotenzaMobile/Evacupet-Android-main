@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Evacupet Android.iml" filepath="$PROJECT_DIR$/../Evacupet Android.iml" group="Evacupet Android" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Evacupet Android-app.iml" filepath="$PROJECT_DIR$/.idea/modules/Evacupet Android-app.iml" group="Evacupet Android/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1624243413/Evacupet_Android.iml" filepath="$PROJECT_DIR$/.idea/modules/-1624243413/Evacupet_Android.iml" group="Evacupet_Android" />
+      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" group="Evacupet Android/app" />
+    </modules>
+  </component>
+</project>

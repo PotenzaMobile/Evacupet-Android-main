@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/right_nav_back"
+    android:orientation="vertical"
+    android:padding="@dimen/page_padding"
+    android:paddingTop="20dp">
+
+
+    <LinearLayout
+        android:id="@+id/ll_evacuation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#86FFFFFF"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+
+
+        <ImageView
+            android:id="@+id/imageView55"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/ic_evacuations" />
+
+        <TextView
+            android:id="@+id/tv_evt_eva"
+            style="@style/testNavStyle"
+            android:layout_width="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="5"
+
+            android:gravity="bottom|left"
+            android:padding="15dp"
+            android:text="@string/evacuations"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#86FFFFFF"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/ic_location" />
+
+        <TextView
+            android:id="@+id/tv_center_location"
+            style="@style/testNavStyle"
+            android:layout_width="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="5"
+
+            android:gravity="bottom|left"
+            android:padding="15dp"
+            android:text="@string/center_location"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#86FFFFFF"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/ic_home" />
+
+        <TextView
+            android:id="@+id/tv_evt_center"
+            style="@style/testNavStyle"
+            android:layout_width="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="5"
+
+            android:gravity="bottom|left"
+            android:padding="15dp"
+            android:text="@string/evacuation_center"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#86FFFFFF"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/ic_report" />
+
+        <TextView
+            android:id="@+id/tv_report"
+            style="@style/testNavStyle"
+            android:layout_width="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="5"
+
+            android:gravity="bottom|left"
+            android:padding="15dp"
+            android:text="@string/report_an_emergency"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#86FFFFFF"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="31dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/ic_find" />
+
+        <TextView
+            android:id="@+id/tv_find_evt"
+            style="@style/testNavStyle"
+            android:layout_width="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="5"
+
+            android:gravity="bottom|left"
+            android:padding="15dp"
+            android:text="@string/find_evacuation"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+

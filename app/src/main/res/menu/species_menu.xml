@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/horse"
+        android:title="@string/horse" />
+    <item
+        android:id="@+id/cow"
+        android:title="@string/cow" />
+    <item
+        android:id="@+id/dog"
+        android:title="@string/dog" />
+    <item
+        android:id="@+id/cat"
+        android:title="@string/cat" />
+    <item
+        android:id="@+id/pig"
+        android:title="@string/pig" />
+    <item
+        android:id="@+id/poultry"
+        android:title="@string/poultry" />
+    <item
+        android:id="@+id/goats"
+        android:title="@string/goats" />
+    <item
+        android:id="@+id/sheep"
+        android:title="@string/sheep" />
+    <item
+        android:id="@+id/reptile"
+        android:title="@string/reptile" />
+    <item
+        android:id="@+id/bird"
+        android:title="@string/bird" />
+    <item
+        android:id="@+id/pocket_pet"
+        android:title="@string/pocket_pet" />
+    <item
+        android:id="@+id/rabbit"
+        android:title="@string/rabbit" />
+    <item
+        android:id="@+id/other"
+        android:title="@string/other" />
+</menu>

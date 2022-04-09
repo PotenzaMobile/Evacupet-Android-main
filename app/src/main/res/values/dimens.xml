@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="page_padding">15dp</dimen>
+    <dimen name="nav_text_margin_top">15dp</dimen>
+    <dimen name="dimens_10dp">10dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+</resources>

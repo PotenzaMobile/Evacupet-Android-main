@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/access_bg"
+    android:orientation="vertical"
+    tools:context=".fragment.NewsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_track_animal"
+        android:orientation="vertical"
+        android:padding="@dimen/dimens_10dp">
+
+        <!--<ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:src="@drawable/elogo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/news_view"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Display news and information about current evacuations underway" />-->
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/news_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            tools:context=".fragment.NewsFragment" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_track_animal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_find_animal"
+            style="@style/buttonStyle"
+            android:layout_height="40dp"
+            android:layout_width="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:visibility="gone"
+            android:text="@string/find_animal" />
+
+        <Button
+            android:id="@+id/btn_chat"
+            style="@style/buttonStyle"
+            android:layout_height="40dp"
+            android:layout_width="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:visibility="gone"
+            android:text="@string/chat" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/white"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:layout_margin="15dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_close_black_24dp" />
+
+        <TextView
+            android:id="@+id/tv_news_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="It appears that you are still transporting animals.Route to center?" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_cancel_ev"
+            style="@style/buttonStyle"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:text=""
+            android:textSize="12sp"
+            android:layout_marginEnd="5dp" />
+
+            <Button
+                android:id="@+id/btn_access"
+                style="@style/buttonStyle"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"
+                android:textSize="12sp"
+                android:text="@string/not_accessible"
+                android:layout_marginStart="5dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_center_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_go_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_close_black_24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="It appears that you are still transporting animals.Route to center?" />
+
+        <Button
+            android:id="@+id/btn_go_center"
+            style="@style/buttonStyle"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:text="@string/route_to_center" />
+
+    </RelativeLayout>
+</RelativeLayout>

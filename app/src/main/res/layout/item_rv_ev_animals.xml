@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_animals_image"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/ic_horse" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/testNavStyle"
+        android:layout_toEndOf="@+id/iv_animals_image"
+        android:layout_toRightOf="@+id/iv_animals_image"
+        android:gravity="start"
+        android:layout_marginRight="45dp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="45dp" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        style="@style/testNavStyle"
+        android:layout_below="@+id/tv_name"
+        android:layout_toEndOf="@+id/iv_animals_image"
+        android:layout_toRightOf="@+id/iv_animals_image"
+        android:gravity="start"
+        android:layout_marginRight="45dp"
+        android:textColor="@color/gray"
+        android:textSize="15sp"
+        android:layout_marginEnd="45dp" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        style="@style/testNavStyle"
+        android:layout_below="@+id/tv_location"
+        android:layout_toEndOf="@+id/iv_animals_image"
+        android:layout_toRightOf="@+id/iv_animals_image"
+        android:gravity="start"
+        android:textColor="@color/gray"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/selector_eva_check" />
+
+    <TextView
+        android:id="@+id/iv_check_one"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        android:layout_toStartOf="@+id/iv_select"
+        android:layout_toLeftOf="@+id/iv_select"
+        android:enabled="false" />
+
+    <TextView
+        android:id="@+id/iv_check_two"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        android:layout_toStartOf="@+id/iv_check_one"
+        android:layout_toLeftOf="@+id/iv_check_one"
+        android:enabled="false" />
+
+    <View
+        android:id="@+id/view_line"
+        style="@style/viewLineStyle"
+        android:layout_below="@+id/tv_address" />
+
+
+</RelativeLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/access_bg"
+    android:fillViewport="true"
+    tools:context=".activity.EvacuationProgressActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <fragment
+                android:id="@+id/mapfragment"
+                class="com.here.android.mpa.mapping.AndroidXMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/rl_button" />
+
+            <RelativeLayout
+                android:id="@+id/rl_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/accept_evacuation"
+                    android:textColor="@color/orange_color"
+                    android:textSize="30sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_title"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_no"
+                        style="@style/buttonStyle"
+                        android:layout_height="35dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_blue_button"
+                        android:text="@string/no" />
+
+                    <Button
+                        android:id="@+id/btn_yes"
+                        style="@style/buttonStyle"
+                        android:layout_height="35dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/yes" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_view_location_info"
+                style="@style/buttonStyle"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:text="@string/view_location_info"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/page_padding"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:src="@drawable/elogo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Searching..."
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Thank you ,we are currently searching for an evacuation for you to perform" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_no_data_found"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/page_padding"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                android:src="@drawable/elogo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="We are working to match you with the best evacuation. Please stand by. You can close the app and use your phone normally - we will send you a message when we are ready." />
+
+
+            <Button
+                android:id="@+id/btn_try_again"
+                style="@style/buttonStyle"
+                android:layout_margin="30dp"
+                android:text="@string/try_again" />
+        </LinearLayout>
+
+        <com.github.lzyzsd.circleprogress.DonutProgress
+           android:layout_centerInParent="true"
+            android:id="@+id/donut_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+
+           />
+    </RelativeLayout>
+
+</ScrollView>

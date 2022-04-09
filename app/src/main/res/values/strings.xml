@@ -1,0 +1,291 @@
+<resources>
+    <string name="app_name">EvacuPet</string>
+    <string name="license_key">HzmtpW9B73e8PNhmrsUFa8iPIRBLSHUv7uyC9uUswi21w/d2ewrhB1HGaYXmxA7nR5d7KhtLfdMfe8OPuzTc5eQ85IFMrdoS5jWdwAhBR3gUJEARiA1g5gwin2/pbIQKd7OShmTDWiPrgrJdQcvcVy8HvBobHUabjlaDNbdkFBl7mJij/DzDafAm8uYG6s+44sQMXpizhmjHyO2wUSnXz6bGQWfduCX4FoKqL27WIvdHMrj+NubvAYxA/bxi/1KLtkE3ixu3UJ5U54waohFwueYvYUD3/4Gp8d0GrucJ3zspABckBXLgzsLoW/1vRWz4lGAD3E8wwuz5r/c2EYKp9WDOUznl8SzPO+h9teLlOTm1iQIh8f+eFvm+mutjTlFQCQuiv1aXgPsNLLCGodfPPl4d9va+/u4iNlPz+5Mrnj7+pUXvXL2oLsceKaZp3nA/D24GbTQY0SZc+I3Q/+Efi74c90T35L+oVeZVJnC79y+pr7lC3iqDlXxo0ZysiYNy9KaN0O92hhPJfqYuusPbGx5Yt0xuvqm7DzcpWslCFhw89oSXQJt8IZGL4TTEkgRxVtX9cYFAH8HmC1x/cJfwsWjCxr17/rGbnFSAFrKLXLfHw+fZTy9DmgaeJYeEsba/u7zwFnkhEs8MkCf1+u/D7Ciqm7ZkcUQYmerbgK+C9Jw=</string>
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <!-- Change the following strings as required -->
+    <string name="back4app_app_id">3RtWqS6ALvhHJgFHCcWAoL1iQgi0GrTLZgGJlKNO</string>
+    <string name="back4app_client_key">jfNdsuyUVkKmvcAYEYrb2KTaUdAVYAzGm46ICwt0</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="or">OR</string>
+    <string name="create_account">Create account</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="gate_code">Gate Code</string>
+    <string name="e_mail">E-mail</string>
+    <string name="mobile">Mobile</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="zip_code">Zip Code</string>
+    <string name="property_notes">Property Notes</string>
+    <string name="volunteer">Volunteer</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="password_repeat">Password(Repeat)</string>
+    <string name="register">Register</string>
+    <string name="news">News</string>
+    <string name="about">About</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="locations">Locations</string>
+    <string name="animals">Animals</string>
+    <string name="notification">Notification</string>
+    <string name="animals_to_evacuate">Animals To Evacuate</string>
+    <string name="logout">Logout</string>
+    <string name="center_location">Center Location</string>
+    <string name="evacuations">Evacuations</string>
+    <string name="evacuation_center">Evacuation Center</string>
+    <string name="evacuation_eva">Evacuations</string>
+    <string name="evacuation_centers">Evacuation Centers</string>
+    <string name="find_evacuation">Find Evacuation</string>
+    <string name="channel_name">My channel</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="update">Update</string>
+    <string name="add_animal">+ Add Animal</string>
+    <string name="location">Location</string>
+    <string name="cancel">Cancel</string>
+    <string name="add">Add</string>
+    <string name="name">Name</string>
+    <string name="bread">Bread</string>
+    <string name="birthday">Birthday</string>
+    <string name="color">Color</string>
+    <string name="height">Height</string>
+    <string name="tattoo_brand">Tattoo/Brand</string>
+    <string name="tag_microchip">Tag/Microchip</string>
+    <string name="trailer_requirements">Trailer Requirements</string>
+    <string name="behavior_loading_information">Behavior/Loading Information</string>
+    <string name="dietary_requirements">Dietary Requirements</string>
+    <string name="facility_details">Facility Details</string>
+    <string name="save">Save</string>
+    <string name="ad_animals">Add Animal</string>
+    <string name="edit_animals">Edit Animals</string>
+    <string name="center_note">Center Notes</string>
+    <string name="center_info">Center Info</string>
+    <string name="contact">Contact</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="horse_capacity">Horse Capacity</string>
+    <string name="cow_capacity">Cow Capacity</string>
+    <string name="sheep_capacity">Sheep Capacity</string>
+    <string name="pig_capacity">Pig Capacity</string>
+    <string name="goat_capacity">Goat Capacity</string>
+    <string name="poultry_capacity">Poultry Capacity</string>
+    <string name="dog_capacity">Dog Capacity</string>
+    <string name="cat_capacity">Cat Capacity</string>
+    <string name="bird_capacity">Bird Capacity</string>
+    <string name="pocket_pet_capacity">Pocket Pet Capacity</string>
+    <string name="reptile_capacity">Reptile Capacity</string>
+    <string name="small_pet_capacity">Small Pet Capacity</string>
+    <string name="other_capacity">Other Capacity</string>
+    <string name="evacuation_in_progress">Evacuation In Progress</string>
+    <string name="accept_evacuation">Accept Evacuation?</string>
+    <string name="trailer_type">Trailer Type</string>
+    <string name="current_capacity">Capacity</string>
+    <string name="assist_evacuation">Assist Evacuation</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_password">Passwords Don\'t match</string>
+    <string name="no_internet_connection">Please check your internet connection!</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_mobile">This mobile number is invalid</string>
+    <string name="home_location">Home Location</string>
+    <string name="eva_in_progress_msg">Are you available, with a vehicle,to assist in evacuation efforts underway?</string>
+    <string name="message_on_customer_deny_location">Deny Location</string>
+    <string name="enable_location">Enable Location</string>
+    <string name="map_not_ready">Map not ready</string>
+    <string name="location_rationale">Enable the location</string>
+    <string name="view_location">View Location</string>
+    <string name="forgot_msg">Enter the email address that you used during signup,and we\'ll send you a link to reset your password.</string>
+    <string name="send_reset_link">Send reset link</string>
+    <string name="route_from_current_location">Route From Current Location</string>
+    <string name="start_turn_by_turn">Start Turn-By-Turn</string>
+    <string name="cancel_evacuations">Cancel Evacuations</string>
+    <string name="load_animals">Load Animals</string>
+    <string name="view_location_info">View Location Info</string>
+    <string name="done_loading">Done Loading</string>
+    <string name="loaded">Loaded</string>
+    <string name="done">Done</string>
+    <string name="try_again">Try Again</string>
+    <string name="route_to_center">Route to center</string>
+    <string name="view_to_center">View Center Info</string>
+    <string name="location_info">Location Info</string>
+    <string name="unload_animals">Unload Animals</string>
+    <string name="done_unloading">Done unloading</string>
+    <string name="animal_details">Animal Details</string>
+    <string name="evacuate_selected">Evacuate Selected</string>
+    <string name="no_evacuation_needed">No evacuation needed</string>
+    <string name="evacuate_now">Evacuate Now</string>
+    <string name="delivered">DELIVERED</string>
+    <string name="contacting_server">Contacting Server…</string>
+    <string name="ev_request">Evacuation Requested</string>
+    <string name="server_contact_msg">Thank you,we are currently reporting your need to our server.</string>
+    <string name="ev_request_msg">Your request has been logged on our server.We will contact you with more information.</string>
+    <string name="area_under_evacuation">Area Under Evacuation</string>
+    <string name="phone">Phone</string>
+    <string name="find_animal">Track Your Animal</string>
+    <string name="news_view">News View</string>
+    <string name="help_info_view">Help/Info View</string>
+    <string name="find_animals">Find Animals</string>
+    <string name="chat">Chat</string>
+    <string name="type_a_message">Message</string>
+    <string name="i_agree_to_the">I agree to the</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="suggest_a_change">Suggest a change</string>
+    <string name="report_an_emergency">Report an Emergency</string>
+    <string name="what_feature_would_you_like_to_see_added_or_changed">What feature would you like to see added or changed?</string>
+    <string name="submit">Submit</string>
+    <string name="enter_suggestion">Enter Suggestion</string>
+    <string name="describe_the_location_and_nature_of_the_emergency">Describe the location and nature of the emergency.</string>
+    <string name="enter_report_an_emergency">Enter Emergency</string>
+    <string name="send">Send</string>
+    <string name="accept">Accept</string>
+    <string name="tell_your_friends">Tell Your Friends!</string>
+    <string name="share">Share</string>
+    <string name="do_not_accept">Do Not Accept</string>
+    <string name="app_close_msg">You must accept the terms and conditions. If you do not, the application will close.</string>
+    <string name="logout_msg">Are you sure to logout?</string>
+    <string name="description">Description</string>
+    <string name="drop_off_note">Drop off notes</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="donate">Donate</string>
+    <string name="species">Species</string>
+    <string name="weight">Weight</string>
+    <string name="name_of_center_manager">Manager Name</string>
+    <string name="alternative_mobile_number">Alternative mobile number</string>
+    <string name="alternative_mobile">Alternative Mobile</string>
+    <string name="not_accessible">Not accessible</string>
+    <string name="accessible">Accessible</string>
+    <string name="horse">Horse</string>
+    <string name="cow">Cow</string>
+    <string name="dog">Dog</string>
+    <string name="cat">Cat</string>
+    <string name="pig">Pig</string>
+    <string name="poultry">Poultry</string>
+    <string name="reptile">Reptile</string>
+    <string name="bird">Bird</string>
+    <string name="goats">Goats</string>
+    <string name="sheep">Sheep</string>
+    <string name="pocket_pet">Pocket Pet</string>
+    <string name="rabbit">Rabbit</string>
+    <string name="other">Other</string>
+    <string name="gender">Gender</string>
+    <string name="drop_animal">Drop Animal</string>
+    <string name="privacy">Privacy</string>
+    <string name="med_details">Medical Requirements</string>
+    <string name="ok">Ok</string>
+    <string name="evacuate_animal">Evacuate Animal</string>
+
+
+    <string-array name="state_list">
+        <item>Select state</item>
+        <item>Alabama</item>
+        <item>Alaska</item>
+        <item>Arizona</item>
+        <item>Arkansas</item>
+        <item>California</item>
+        <item>Colorado</item>
+        <item>Connecticut</item>
+        <item>Delaware</item>
+        <item>Florida</item>
+        <item>Georgia</item>
+        <item>Hawaii</item>
+        <item>Idaho</item>
+        <item>Illinois</item>
+        <item>Indiana</item>
+        <item>Iowa</item>
+        <item>Kansas</item>
+        <item>Kentucky</item>
+        <item>Louisiana</item>
+        <item>Maine</item>
+        <item>Maryland</item>
+        <item>Massachusetts</item>
+        <item>Michigan</item>
+        <item>Minnesota</item>
+        <item>Mississippi</item>
+        <item>Missouri</item>
+        <item>Montana</item>
+        <item>Nebraska</item>
+        <item>Nevada</item>
+        <item>New Hampshire</item>
+        <item>New Jersey</item>
+        <item>New Mexico</item>
+        <item>New York</item>
+        <item>North Carolina</item>
+        <item>North Dakota</item>
+        <item>Ohio</item>
+        <item>Oklahoma</item>
+        <item>Oregon</item>
+        <item>Pennsylvania</item>
+        <item>Rhode Island</item>
+        <item>South Carolina</item>
+        <item>South Dakota</item>
+        <item>Tennessee</item>
+        <item>Texas</item>
+        <item>Utah</item>
+        <item>Vermont</item>
+        <item>Virginia</item>
+        <item>Washington</item>
+        <item>West Virginia</item>
+        <item>Wisconsin</item>
+        <item>Wyoming</item>
+
+    </string-array>
+
+    <string-array name="userGroup">
+        <item>Select Group</item>
+        <item>Viva Rescue</item>
+        <item>LTC Fire &amp; Rescue </item>
+    </string-array>
+
+    <string-array name="trailerReq">
+        <item>Trailer Requirements</item>
+        <item>Standard</item>
+        <item>Warmblood</item>
+        <item>Double Extra Large</item>
+    </string-array>
+
+    <string-array name="otherTrailerType">
+        <item>Trailer Type</item>
+        <item>Standard</item>
+        <item>Warmblood</item>
+        <item>Double Extra Large</item>
+    </string-array>
+    <string-array name="hoursTrailerType">
+        <item>Trailer Type</item>
+        <item>Standard</item>
+        <item>Warmblood</item>
+        <item>Stock</item>
+    </string-array>
+
+    <string-array name="animalType">
+        <item>Animal Type</item>
+        <item>Horse</item>
+        <item>Kennel</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="animalGender">
+        <item>Select gender</item>
+        <item>Altered female</item>
+        <item>Altered male</item>
+        <item>Unaltered female</item>
+        <item>Unaltered male</item>
+
+    </string-array>
+    <string-array name="weight">
+        <item>Select Weight</item>
+        <item>25</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+        <item>125</item>
+        <item>150</item>
+
+    </string-array>
+
+</resources>

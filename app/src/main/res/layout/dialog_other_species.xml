@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    android:padding="20dp"
+    app:cardCornerRadius="5dp">
+
+
+    <EditText
+        android:id="@+id/ed_other"
+        style="@style/editTextStyle"
+        android:layout_marginTop="20dp"
+        android:hint="Other" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_close"
+            style="@style/buttonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dimens_10dp"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_yes"
+            style="@style/buttonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dimens_10dp"
+            android:layout_weight="1"
+            android:text="@string/add"
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

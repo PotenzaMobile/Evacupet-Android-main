@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/access_bg"
+        android:padding="@dimen/page_padding"
+        android:layout_height="wrap_content"
+        >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/rv_animal"/>
+
+    <Button
+        android:id="@+id/btn_add_animal"
+        style="@style/buttonStyle"
+        android:text="@string/add_animal"
+        android:layout_below="@+id/rv_animal"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/btn_drop_animal"
+            style="@style/buttonStyle"
+            android:visibility="gone"
+            android:text="@string/drop_animal"
+            android:layout_below="@+id/btn_add_animal"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/btn_delete_animal"
+            style="@style/buttonStyle"
+            android:visibility="gone"
+            android:text="Delete Animal"
+            android:layout_below="@+id/btn_drop_animal"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

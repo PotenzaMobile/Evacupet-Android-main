@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/access_bg"
+    android:fillViewport="true"
+    android:padding="@dimen/page_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/rl_location"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_type"
+                android:layout_height="50dp"
+                android:layout_width="50dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toEndOf="@+id/iv_type"
+                android:layout_toRightOf="@+id/iv_type"
+                android:background="@drawable/bg_edit_box"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:id="@+id/ed_animal_name"
+                    style="@style/testHintStyle"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:maxLines="1"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="@string/name"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_down" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+        <ImageView
+            android:id="@+id/iv_animals_image"
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_place_holder"
+            android:visibility="gone" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/tv_name_title"
+                style="@style/testHintStyle"
+                android:layout_height="40dp"
+                android:text="@string/name" />
+
+            <TextView
+                android:id="@+id/ed_name"
+                style="@style/editTextStyle"
+                android:layout_toEndOf="@+id/tv_name_title"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/tv_name_title"
+                android:hint="@string/name"
+               />
+
+            <View
+                android:id="@+id/view_1"
+                style="@style/viewLineStyle"
+                android:layout_below="@+id/ed_name" />
+
+            <TextView
+                android:id="@+id/tv_Bread"
+                style="@style/testHintStyle"
+                android:layout_below="@+id/view_1"
+                android:layout_height="40dp"
+                android:text="@string/bread" />
+
+            <TextView
+                android:id="@+id/ed_bread"
+                style="@style/editTextStyle"
+                android:layout_below="@+id/view_1"
+                android:layout_toEndOf="@+id/tv_name_title"
+                android:layout_toRightOf="@+id/tv_name_title"
+                android:hint="@string/bread"
+                android:gravity="center_vertical"/>
+
+            <View
+                android:id="@+id/view_2"
+                style="@style/viewLineStyle"
+                android:layout_below="@+id/ed_bread" />
+
+            <TextView
+                android:id="@+id/tv_birthday"
+                style="@style/testHintStyle"
+                android:layout_below="@+id/view_2"
+                android:layout_height="40dp"
+                android:text="@string/birthday" />
+
+            <TextView
+                android:id="@+id/ed_bday"
+                style="@style/editTextStyle"
+                android:layout_below="@+id/view_2"
+                android:layout_toEndOf="@+id/tv_birthday"
+                android:layout_toRightOf="@+id/tv_birthday"
+                android:hint="@string/birthday"
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical" />
+
+            <View
+                android:id="@+id/view_3"
+                style="@style/viewLineStyle"
+                android:layout_below="@+id/ed_bday" />
+
+            <TextView
+                android:id="@+id/tv_color"
+                style="@style/testHintStyle"
+                android:layout_below="@+id/view_3"
+                android:layout_height="40dp"
+                android:text="@string/color" />
+
+            <TextView
+                android:id="@+id/ed_color"
+                style="@style/editTextStyle"
+                android:layout_below="@+id/view_3"
+                android:layout_toEndOf="@+id/tv_color"
+                android:layout_toRightOf="@+id/tv_color"
+                android:hint="@string/color"
+                android:gravity="center_vertical" />
+
+            <View
+                android:id="@+id/view_4"
+                style="@style/viewLineStyle"
+                android:layout_below="@+id/tv_color" />
+
+
+            <TextView
+                android:id="@+id/tv_height"
+                style="@style/testHintStyle"
+                android:layout_below="@+id/view_4"
+                android:layout_height="40dp"
+                android:text="@string/height" />
+
+            <TextView
+                android:id="@+id/ed_height"
+                style="@style/editTextStyle"
+                android:layout_below="@+id/view_4"
+                android:layout_toEndOf="@+id/tv_color"
+                android:layout_toRightOf="@+id/tv_color"
+                android:gravity="center_vertical"
+                android:hint="@string/height" />
+
+            <View
+                android:id="@+id/view_5"
+                style="@style/viewLineStyle"
+                android:layout_below="@+id/tv_height" />
+
+            <TextView
+                android:id="@+id/tv_tattoo"
+                style="@style/testHintStyle"
+                android:layout_below="@+id/view_5"
+                android:layout_height="40dp"
+                android:text="@string/tattoo_brand" />
+
+            <TextView
+                android:id="@+id/ed_tattoo"
+                style="@style/editTextStyle"
+                android:layout_below="@+id/view_5"
+                android:layout_toEndOf="@+id/tv_tattoo"
+                android:layout_toRightOf="@+id/tv_tattoo"
+                android:gravity="center_vertical"
+                android:hint="@string/tattoo_brand" />
+
+            <View
+                android:id="@+id/view_6"
+                style="@style/viewLineStyle"
+                android:layout_below="@+id/tv_tattoo" />
+
+            <TextView
+                android:id="@+id/tv_tag_micro"
+                style="@style/testHintStyle"
+                android:layout_below="@+id/view_6"
+                android:layout_height="40dp"
+                android:text="@string/tag_microchip" />
+
+            <TextView
+                android:id="@+id/ed_microchip"
+                style="@style/editTextStyle"
+                android:layout_below="@+id/view_6"
+                android:layout_toEndOf="@+id/tv_tag_micro"
+                android:layout_toRightOf="@+id/tv_tag_micro"
+                android:gravity="center_vertical"
+                android:hint="@string/tag_microchip" />
+
+            <View
+                android:id="@+id/view_7"
+                style="@style/viewLineStyle"
+                android:layout_below="@+id/tv_tag_micro" />
+
+            <TextView
+                android:id="@+id/tv_trailer"
+                style="@style/testHintStyle"
+                android:layout_below="@+id/view_7"
+                android:layout_height="40dp"
+                android:text="@string/trailer_requirements" />
+
+            <LinearLayout
+                android:id="@+id/ll_state"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/view_7"
+                android:layout_toEndOf="@+id/tv_trailer"
+                android:layout_toRightOf="@+id/tv_trailer"
+                android:background="@drawable/bg_edit_box"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/sp_trailer"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@null" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_down" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_8"
+                style="@style/viewLineStyle"
+                android:layout_below="@+id/tv_trailer" />
+
+            <TextView
+                android:id="@+id/tv_behavior"
+                style="@style/testHintStyle"
+                android:layout_height="80dp"
+                android:layout_below="@+id/view_8"
+                android:text="@string/behavior_loading_information" />
+
+
+            <TextView
+                android:id="@+id/ed_behavior"
+                style="@style/editTextStyle"
+                android:layout_height="80dp"
+                android:layout_below="@+id/view_8"
+                android:layout_toEndOf="@+id/tv_behavior"
+                android:layout_toRightOf="@+id/tv_behavior"
+                android:gravity="top"
+                android:hint="@string/behavior_loading_information"
+                android:maxLines="8"
+                android:paddingTop="10dp" />
+
+            <View
+                android:id="@+id/view_9"
+                style="@style/viewLineStyle"
+                android:layout_below="@+id/tv_behavior" />
+
+            <TextView
+                android:id="@+id/tv_dietary"
+                style="@style/testHintStyle"
+                android:layout_below="@+id/view_9"
+                android:layout_height="40dp"
+                android:text="@string/dietary_requirements" />
+
+            <TextView
+                android:id="@+id/ed_dietary"
+                style="@style/editTextStyle"
+                android:layout_below="@+id/view_9"
+                android:layout_toEndOf="@+id/tv_dietary"
+                android:layout_toRightOf="@+id/tv_dietary"
+                android:gravity="center_vertical"
+                android:hint="@string/dietary_requirements" />
+
+
+            <View
+                android:id="@+id/view_11"
+                style="@style/viewLineStyle"
+                android:layout_below="@+id/tv_dietary" />
+
+            <TextView
+                android:id="@+id/tv_facility"
+                style="@style/testHintStyle"
+                android:layout_height="80dp"
+                android:layout_below="@+id/view_11"
+                android:text="@string/facility_details" />
+
+
+            <TextView
+                android:id="@+id/ed_facility"
+                style="@style/editTextStyle"
+                android:layout_height="80dp"
+                android:layout_below="@+id/view_11"
+                android:layout_toEndOf="@+id/tv_facility"
+                android:layout_toRightOf="@+id/tv_facility"
+                android:gravity="top"
+                android:hint="@string/facility_details"
+                android:inputType="textCapWords"
+                android:maxLines="8"
+                android:paddingTop="10dp" />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_done"
+            style="@style/buttonStyle"
+            android:layout_marginTop="20dp"
+            android:text="@string/done" />
+    </LinearLayout>
+
+
+</ScrollView>

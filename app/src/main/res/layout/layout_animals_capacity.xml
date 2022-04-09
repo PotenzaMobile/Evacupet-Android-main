@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_horse"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginLeft="60dp"
+        android:gravity="center_vertical"
+        android:text="@string/horse_capacity"/>
+
+    <EditText
+        android:id="@+id/ed_horse_cap"
+        style="@style/editTextStyle"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_width="90dp"
+        android:layout_alignParentEnd="true" />
+
+    <View
+        android:id="@+id/view_1"
+        style="@style/viewLineStyle"
+        android:layout_below="@+id/ed_horse_cap"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_below="@+id/view_1"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_cow"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@+id/view_1"
+        android:layout_marginLeft="60dp"
+        android:gravity="center_vertical"
+        android:text="@string/cow_capacity"/>
+
+    <EditText
+        android:id="@+id/ed_cow_cap"
+        style="@style/editTextStyle"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view_1"
+        android:layout_marginTop="5dp"
+        android:layout_width="90dp"
+        android:layout_alignParentEnd="true" />
+
+    <View
+        android:id="@+id/view_2"
+        style="@style/viewLineStyle"
+        android:layout_below="@+id/ed_cow_cap"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_below="@+id/view_2"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_sheep"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@+id/view_2"
+        android:layout_marginLeft="60dp"
+        android:gravity="center_vertical"
+        android:text="@string/sheep_capacity"/>
+
+    <EditText
+        android:id="@+id/ed_sheep_cap"
+        style="@style/editTextStyle"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view_2"
+        android:layout_marginTop="5dp"
+        android:layout_width="90dp"
+        android:layout_alignParentEnd="true" />
+
+    <View
+        android:id="@+id/view_3"
+        style="@style/viewLineStyle"
+        android:layout_below="@+id/ed_sheep_cap"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_below="@+id/view_3"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_pig"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@+id/view_3"
+        android:layout_marginLeft="60dp"
+        android:gravity="center_vertical"
+        android:text="@string/pig_capacity"/>
+
+    <EditText
+        android:id="@+id/ed_pig_cap"
+        style="@style/editTextStyle"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view_3"
+        android:layout_marginTop="5dp"
+        android:layout_width="90dp"
+        android:layout_alignParentEnd="true" />
+
+    <View
+        android:id="@+id/view_4"
+        style="@style/viewLineStyle"
+        android:layout_below="@+id/ed_pig_cap"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_below="@+id/view_4"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_goat"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@+id/view_4"
+        android:layout_marginLeft="60dp"
+        android:gravity="center_vertical"
+        android:text="@string/goat_capacity"/>
+
+    <EditText
+        android:id="@+id/ed_goat_cap"
+        style="@style/editTextStyle"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view_4"
+        android:layout_marginTop="5dp"
+        android:layout_width="90dp"
+        android:layout_alignParentEnd="true" />
+
+    <View
+        android:id="@+id/view_5"
+        style="@style/viewLineStyle"
+        android:layout_below="@+id/ed_goat_cap"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_below="@+id/view_5"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_chicken"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@+id/view_5"
+        android:layout_marginLeft="60dp"
+        android:gravity="center_vertical"
+        android:text="@string/poultry_capacity"/>
+
+    <EditText
+        android:id="@+id/ed_poultry_cap"
+        style="@style/editTextStyle"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view_5"
+        android:layout_marginTop="5dp"
+        android:layout_width="90dp"
+        android:layout_alignParentEnd="true" />
+    <View
+        android:id="@+id/view_6"
+        style="@style/viewLineStyle"
+        android:layout_below="@+id/ed_poultry_cap"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_below="@+id/view_6"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_dog"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@+id/view_6"
+        android:layout_marginLeft="60dp"
+        android:gravity="center_vertical"
+        android:text="@string/dog_capacity"/>
+
+    <EditText
+        android:id="@+id/ed_dog_cap"
+        style="@style/editTextStyle"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view_6"
+        android:layout_marginTop="5dp"
+        android:layout_width="90dp"
+        android:layout_alignParentEnd="true" />
+
+    <View
+        android:id="@+id/view_7"
+        style="@style/viewLineStyle"
+        android:layout_below="@+id/ed_dog_cap"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_below="@+id/view_7"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_cat"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@+id/view_7"
+        android:layout_marginLeft="60dp"
+        android:gravity="center_vertical"
+        android:text="@string/cat_capacity"/>
+
+    <EditText
+        android:id="@+id/ed_cat_cap"
+        style="@style/editTextStyle"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view_7"
+        android:layout_marginTop="5dp"
+        android:layout_width="90dp"
+        android:layout_alignParentEnd="true" />
+    <View
+        android:id="@+id/view_8"
+        style="@style/viewLineStyle"
+        android:layout_below="@+id/ed_cat_cap"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_below="@+id/view_8"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_bunny"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@+id/view_8"
+        android:layout_marginLeft="60dp"
+        android:gravity="center_vertical"
+        android:text="@string/small_pet_capacity"/>
+
+    <EditText
+        android:id="@+id/ed_small_pet_cap"
+        style="@style/editTextStyle"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view_8"
+        android:layout_marginTop="5dp"
+        android:layout_width="90dp"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

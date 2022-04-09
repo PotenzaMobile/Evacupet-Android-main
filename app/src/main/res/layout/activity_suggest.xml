@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    android:fitsSystemWindows="true"
+    android:layout_centerVertical="true"
+    tools:context=".activity.SuggestActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_msg"
+            style="@style/testHintStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:text="@string/what_feature_would_you_like_to_see_added_or_changed"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/ed_name"
+            style="@style/editTextStyle"
+            android:layout_below="@+id/tv_msg"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="top"
+            android:hint="@string/enter_name"
+            android:maxLines="1"
+            android:minHeight="40dp"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/ed_description"
+            style="@style/editTextStyle"
+            android:layout_below="@+id/ed_name"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="top"
+            android:hint="@string/enter_suggestion"
+            android:inputType="textMultiLine"
+            android:maxLines="100"
+            android:minHeight="200dp"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            style="@style/buttonStyle"
+            android:layout_below="@+id/ed_description"
+            android:layout_margin="30dp"
+            android:text="@string/send" />
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

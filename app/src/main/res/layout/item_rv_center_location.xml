@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rl_main"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/iv_animals_image"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/ic_horse"
+        android:layout_marginEnd="30dp" />
+
+    <TextView
+        android:id="@+id/tv_name"
+       style="@style/testNavStyle"
+        android:text="name"
+        android:gravity="start"
+        android:layout_toRightOf="@+id/iv_animals_image"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@+id/iv_animals_image" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        style="@style/testNavStyle"
+        android:text="name"
+        android:gravity="start"
+        android:layout_below="@+id/tv_name"
+        android:layout_toRightOf="@+id/iv_animals_image"
+        android:textColor="@color/gray"
+        android:textSize="15sp"
+        android:layout_toEndOf="@+id/iv_animals_image" />
+
+    <TextView
+        android:id="@+id/tv_des"
+        style="@style/testNavStyle"
+        android:text="name"
+        android:gravity="start"
+        android:layout_below="@+id/tv_address"
+        android:layout_toRightOf="@+id/iv_animals_image"
+        android:textColor="@color/gray"
+        android:textSize="15sp"
+        android:layout_toEndOf="@+id/iv_animals_image" />
+
+    <View
+        style="@style/viewLineStyle"
+        android:layout_below="@+id/tv_des"/>
+
+</RelativeLayout>

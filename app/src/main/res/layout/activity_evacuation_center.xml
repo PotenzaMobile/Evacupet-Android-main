@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/access_bg"
+    android:fillViewport="true"
+    tools:context=".activity.EvacuationCenterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/page_padding">
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/testHintStyle"
+            android:height="40dp"
+            android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/ed_name"
+            style="@style/editTextStyle"
+            android:layout_toEndOf="@+id/tv_name"
+            android:layout_toRightOf="@+id/tv_name"
+            android:hint="@string/name"
+            android:inputType="textCapWords" />
+
+        <View
+            android:id="@+id/view_1"
+            style="@style/viewLineStyle"
+            android:layout_below="@+id/ed_name" />
+
+        <TextView
+            android:id="@+id/tv_manager_name"
+            style="@style/testHintStyle"
+            android:layout_below="@+id/view_1"
+            android:text="@string/name_of_center_manager" />
+
+        <EditText
+            android:id="@+id/ed_manager_name"
+            style="@style/editTextStyle"
+            android:layout_below="@+id/view_1"
+            android:layout_toEndOf="@+id/tv_address"
+            android:layout_toRightOf="@+id/tv_address"
+            android:inputType="textCapWords"
+            android:hint="@string/name_of_center_manager" />
+
+        <View
+            android:id="@+id/view_"
+            style="@style/viewLineStyle"
+            android:layout_below="@+id/tv_manager_name" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            style="@style/testHintStyle"
+            android:layout_below="@+id/view_"
+            android:text="@string/address" />
+
+        <EditText
+            android:id="@+id/ed_address"
+            style="@style/editTextStyle"
+            android:layout_below="@+id/view_"
+            android:layout_toEndOf="@+id/tv_address"
+            android:layout_toRightOf="@+id/tv_address"
+            android:inputType="textCapWords"
+            android:hint="@string/address" />
+
+        <View
+            android:id="@+id/view_2"
+            style="@style/viewLineStyle"
+            android:layout_below="@+id/tv_address" />
+
+
+        <TextView
+            android:id="@+id/tv_city"
+            style="@style/testHintStyle"
+            android:layout_below="@+id/view_2"
+            android:text="@string/city" />
+
+        <EditText
+            android:id="@+id/ed_city"
+            style="@style/editTextStyle"
+            android:layout_below="@+id/view_2"
+            android:layout_toEndOf="@+id/tv_address"
+            android:layout_toRightOf="@+id/tv_address"
+            android:inputType="textCapWords"
+            android:hint="@string/city" />
+
+        <View
+            android:id="@+id/view_3"
+            style="@style/viewLineStyle"
+            android:layout_below="@+id/tv_city" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            style="@style/testHintStyle"
+            android:layout_below="@+id/view_3"
+            android:text="@string/state" />
+
+        <Spinner
+            android:id="@+id/sp_state"
+            style="@style/editTextStyle"
+            android:layout_below="@+id/view_3"
+            android:layout_toEndOf="@+id/tv_state"
+            android:layout_toRightOf="@+id/tv_state"
+
+            />
+
+        <View
+            android:id="@+id/view_4"
+            style="@style/viewLineStyle"
+            android:layout_below="@+id/sp_state" />
+
+        <TextView
+            android:id="@+id/tv_zip_code"
+            style="@style/testHintStyle"
+            android:layout_below="@+id/view_4"
+            android:text="@string/zip_code" />
+
+        <EditText
+            android:id="@+id/ed_zipcode"
+            style="@style/editTextStyle"
+            android:layout_below="@+id/view_4"
+            android:layout_toEndOf="@+id/tv_zip_code"
+            android:layout_toRightOf="@+id/tv_zip_code"
+            android:inputType="number"
+            android:hint="@string/zip_code" />
+
+        <View
+            android:id="@+id/view_5"
+            style="@style/viewLineStyle"
+            android:layout_below="@+id/tv_zip_code" />
+
+        <TextView
+            android:id="@+id/tv_note"
+            style="@style/testHintStyle"
+            android:layout_height="80dp"
+            android:layout_below="@+id/view_5"
+            android:text="@string/center_note" />
+
+
+        <EditText
+            android:id="@+id/ed_center_notes"
+            style="@style/editTextStyle"
+            android:layout_height="80dp"
+            android:layout_below="@+id/view_5"
+            android:layout_toEndOf="@+id/tv_note"
+            android:layout_toRightOf="@+id/tv_note"
+            android:gravity="top"
+            android:hint="@string/center_note"
+            android:inputType="textCapWords|textMultiLine"
+            android:maxLines="5000"
+
+            android:paddingTop="10dp" />
+
+        <View
+            android:id="@+id/view_6"
+            style="@style/viewLineStyle"
+            android:layout_below="@+id/tv_note" />
+
+        <TextView
+            android:id="@+id/tv_contact"
+            style="@style/testHintStyle"
+            android:layout_below="@+id/view_6"
+            android:text="@string/phone_number" />
+
+        <EditText
+            android:id="@+id/ed_phone_number"
+            style="@style/editTextStyle"
+            android:layout_below="@+id/view_6"
+            android:layout_toEndOf="@+id/tv_contact"
+            android:layout_toRightOf="@+id/tv_contact"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:maxLength="14" />
+
+        <View
+            android:id="@+id/view_7"
+            style="@style/viewLineStyle"
+            android:layout_below="@+id/tv_contact" />
+
+
+        <TextView
+            android:id="@+id/tv_phone_number"
+            style="@style/testHintStyle"
+            android:layout_below="@+id/view_7"
+            android:text="@string/alternative_mobile_number" />
+
+        <EditText
+            android:id="@+id/ed_contact"
+            style="@style/editTextStyle"
+            android:layout_below="@+id/view_7"
+            android:layout_toEndOf="@+id/tv_phone_number"
+            android:layout_toRightOf="@+id/tv_phone_number"
+            android:hint="@string/alternative_mobile"
+            android:inputType="phone"
+            android:maxLength="14" />
+
+        <View
+            android:id="@+id/view_8"
+            style="@style/viewLineStyle"
+            android:layout_below="@+id/tv_phone_number" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_animal_capacity"
+            android:layout_width="match_parent"
+            android:layout_below="@id/view_8"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:id="@+id/btn_update"
+            style="@style/buttonStyle"
+            android:layout_below="@+id/rv_animal_capacity"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="350dp"
+            android:text="@string/update" />
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_location_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:background="@color/white"
+        >
+
+        <Button
+            android:id="@+id/btn_add_location"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_blue_circle_botter"
+            android:text="+"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lv_locations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_add_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_address"
+            style="@style/testHintStyle"
+            android:text="@string/address" />
+
+        <EditText
+            android:id="@+id/ed_address"
+            style="@style/editTextStyle"
+            android:layout_toEndOf="@+id/tv_address"
+            android:layout_toRightOf="@+id/tv_address"
+            android:inputType="textCapWords"
+            android:hint="@string/address" />
+
+
+        <TextView
+            android:id="@+id/tv_city"
+            style="@style/testHintStyle"
+            android:layout_below="@+id/tv_address"
+            android:layout_marginTop="10dp"
+            android:text="@string/city" />
+
+        <EditText
+            style="@style/editTextStyle"
+            android:layout_below="@+id/tv_address"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/tv_city"
+            android:layout_toRightOf="@+id/tv_address"
+            android:inputType="textCapWords"
+            android:id="@+id/ed_city"
+            android:hint="@string/city" />
+
+
+        <TextView
+            android:id="@+id/tv_state"
+            style="@style/testHintStyle"
+            android:layout_below="@+id/tv_city"
+            android:layout_marginTop="10dp"
+            android:text="@string/state" />
+
+        <EditText
+            android:id="@+id/ed_state"
+            style="@style/editTextStyle"
+            android:layout_below="@+id/tv_city"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/tv_state"
+            android:layout_toRightOf="@+id/tv_state"
+            android:inputType="textCapWords"
+            android:hint="@string/state" />
+
+
+        <TextView
+            android:id="@+id/tv_zip_code"
+            style="@style/testHintStyle"
+            android:layout_below="@+id/tv_state"
+            android:layout_marginTop="10dp"
+            android:text="@string/zip_code" />
+
+        <EditText
+            style="@style/editTextStyle"
+            android:layout_below="@+id/tv_state"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/tv_zip_code"
+            android:layout_toRightOf="@+id/tv_zip_code"
+            android:inputType="number"
+            android:id="@+id/ed_zipcode"
+            android:hint="@string/zip_code" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_zip_code"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="@style/buttonStyle"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_blue_button"
+                android:text="@string/cancel" />
+
+            <Button
+                android:id="@+id/btn_add"
+                style="@style/buttonStyle"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:text="@string/add" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

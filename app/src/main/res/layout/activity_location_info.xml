@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".activity.LocationInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/access_bg"
+        android:padding="@dimen/page_padding">
+        <RelativeLayout
+            android:id="@+id/rl_location_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_f_name"
+            style="@style/testHintStyle"
+            android:text="@string/first_name" />
+
+        <TextView
+            android:id="@+id/tv_first_name"
+            style="@style/testDataStyle"
+            android:layout_toEndOf="@+id/tv_f_name"
+            android:layout_toRightOf="@+id/tv_f_name"
+            android:hint="@string/first_name" />
+
+        <View
+            android:id="@+id/view_1"
+            style="@style/viewLineStyle"
+            android:layout_below="@+id/tv_f_name" />
+
+        <TextView
+            android:id="@+id/tv_l_name"
+            style="@style/testHintStyle"
+            android:layout_below="@+id/view_1"
+            android:text="@string/last_name" />
+
+        <TextView
+            android:id="@+id/tv_last_name"
+            style="@style/testDataStyle"
+            android:layout_below="@+id/view_1"
+            android:layout_toEndOf="@+id/tv_l_name"
+            android:layout_toRightOf="@+id/tv_l_name"
+            android:hint="@string/last_name" />
+
+        <View
+            android:id="@+id/view_2"
+            style="@style/viewLineStyle"
+            android:layout_below="@+id/tv_l_name" />
+
+        <TextView
+            android:id="@+id/email"
+            style="@style/testHintStyle"
+            android:layout_below="@+id/view_2"
+            android:text="@string/e_mail" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            style="@style/testDataStyle"
+            android:layout_below="@+id/view_2"
+            android:layout_toEndOf="@+id/email"
+            android:layout_toRightOf="@+id/email"
+            android:hint="@string/e_mail" />
+
+        <View
+            android:id="@+id/view_3"
+            style="@style/viewLineStyle"
+            android:layout_below="@+id/email" />
+
+        <TextView
+            android:id="@+id/mobile"
+            style="@style/testHintStyle"
+            android:layout_below="@+id/view_3"
+            android:text="@string/mobile" />
+
+        <TextView
+            android:id="@+id/tv_mobile"
+            style="@style/testDataStyle"
+            android:layout_below="@+id/view_3"
+            android:layout_toEndOf="@+id/mobile"
+            android:layout_toRightOf="@+id/mobile"
+            android:hint="@string/mobile" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:id="@+id/rl_unload_data"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/contact"
+                style="@style/testHintStyle"
+                android:text="@string/contact" />
+
+            <TextView
+                android:id="@+id/tv_contact"
+                style="@style/testDataStyle"
+                android:layout_toEndOf="@+id/contact"
+                android:layout_toRightOf="@+id/contact"
+                android:hint="@string/contact" />
+
+            <View
+                android:id="@+id/view_10"
+                style="@style/viewLineStyle"
+                android:layout_below="@+id/contact" />
+
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/testHintStyle"
+                android:layout_below="@+id/view_10"
+                android:text="@string/name" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/testDataStyle"
+                android:layout_below="@+id/view_10"
+                android:layout_toEndOf="@+id/name"
+                android:layout_toRightOf="@+id/name"
+                android:hint="@string/name" />
+
+            <View
+                android:id="@+id/view_11"
+                style="@style/viewLineStyle"
+                android:layout_below="@+id/name" />
+
+
+            <TextView
+                android:id="@+id/phone"
+                style="@style/testHintStyle"
+                android:layout_below="@+id/view_11"
+                android:text="@string/phone" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                style="@style/testDataStyle"
+                android:layout_below="@+id/view_11"
+                android:layout_toEndOf="@+id/phone"
+                android:layout_toRightOf="@+id/phone"
+                android:hint="@string/phone_number" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view_4"
+            style="@style/viewLineStyle"
+             />
+
+        <TextView
+            android:id="@+id/address"
+            style="@style/testHintStyle"
+            android:layout_below="@+id/view_4"
+            android:text="@string/address" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            style="@style/testDataStyle"
+            android:layout_below="@+id/view_4"
+            android:layout_toEndOf="@+id/address"
+            android:layout_toRightOf="@+id/address"
+            android:hint="@string/address" />
+
+        <View
+            android:id="@+id/view_5"
+            style="@style/viewLineStyle"
+            android:layout_below="@+id/address" />
+
+        <TextView
+            android:id="@+id/city"
+            style="@style/testHintStyle"
+            android:layout_below="@+id/view_5"
+            android:text="@string/city" />
+
+        <TextView
+            android:id="@+id/tv_city"
+            style="@style/testDataStyle"
+            android:layout_below="@+id/view_5"
+            android:layout_toEndOf="@+id/city"
+            android:layout_toRightOf="@+id/city"
+            android:hint="@string/city" />
+
+        <View
+            android:id="@+id/view_6"
+            style="@style/viewLineStyle"
+            android:layout_below="@+id/city" />
+
+        <TextView
+            android:id="@+id/state"
+            style="@style/testHintStyle"
+            android:layout_below="@+id/view_6"
+            android:text="@string/state" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            style="@style/testDataStyle"
+            android:layout_below="@+id/view_6"
+            android:layout_toEndOf="@+id/state"
+            android:layout_toRightOf="@+id/state"
+            android:hint="@string/state" />
+
+        <View
+            android:id="@+id/view_7"
+            style="@style/viewLineStyle"
+            android:layout_below="@+id/state" />
+
+        <TextView
+            android:id="@+id/zipcode"
+            style="@style/testHintStyle"
+            android:layout_below="@+id/view_7"
+            android:text="@string/zip_code" />
+
+        <TextView
+            android:id="@+id/tv_zipcode"
+            style="@style/testDataStyle"
+            android:layout_below="@+id/view_7"
+            android:layout_toEndOf="@+id/zipcode"
+            android:layout_toRightOf="@+id/zipcode"
+            android:hint="@string/zip_code" />
+
+        <View
+            android:id="@+id/view_8"
+            style="@style/viewLineStyle"
+            android:layout_below="@+id/zipcode" />
+
+        <TextView
+            android:id="@+id/property_notes"
+            style="@style/testHintStyle"
+            android:layout_height="80dp"
+            android:layout_below="@+id/view_8"
+            android:text="@string/property_notes" />
+
+        <TextView
+            android:id="@+id/tv_property_notes"
+            style="@style/testDataStyle"
+            android:layout_below="@+id/view_8"
+            android:layout_height="wrap_content"
+            android:maxLines="20"
+            android:gravity="top"
+            android:layout_toEndOf="@+id/property_notes"
+            android:layout_toRightOf="@+id/property_notes"
+            />
+
+        <View
+            android:id="@+id/view_9"
+            style="@style/viewLineStyle"
+            android:layout_below="@+id/property_notes" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_load_animal"
+            style="@style/buttonStyle"
+            android:layout_marginTop="20dp"
+            android:text="@string/load_animals"
+
+            />
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_unload_animal"
+            style="@style/buttonStyle"
+            android:layout_marginTop="20dp"
+            android:text="@string/unload_animals"
+
+            />
+    </LinearLayout>
+
+</ScrollView>
