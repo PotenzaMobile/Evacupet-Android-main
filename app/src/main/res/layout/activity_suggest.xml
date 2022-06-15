@@ -22,7 +22,6 @@
             style="@style/testHintStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:gravity="center"
             android:text="@string/what_feature_would_you_like_to_see_added_or_changed"
             android:textSize="18sp" />
@@ -30,14 +29,15 @@
         <EditText
             android:id="@+id/ed_name"
             style="@style/editTextStyle"
-            android:layout_below="@+id/tv_msg"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_msg"
             android:layout_marginTop="20dp"
             android:gravity="top"
             android:hint="@string/enter_name"
             android:maxLines="1"
             android:minHeight="40dp"
-            android:padding="10dp" />
+            android:padding="10dp"
+            android:visibility="gone" />
 
         <EditText
             android:id="@+id/ed_description"

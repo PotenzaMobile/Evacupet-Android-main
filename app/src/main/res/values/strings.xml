@@ -247,6 +247,8 @@
         <item>Standard</item>
         <item>Warmblood</item>
         <item>Double Extra Large</item>
+        <item>Car</item>
+        <item>Truck</item>
     </string-array>
 
     <string-array name="otherTrailerType">

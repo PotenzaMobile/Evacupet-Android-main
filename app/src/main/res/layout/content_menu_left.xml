@@ -147,36 +147,6 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/imageView_Notification"
-                    android:layout_width="34dp"
-                    android:layout_height="26dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp"
-                    android:scaleType="fitCenter"
-                    android:tint="@color/blue"
-                    android:src="@drawable/ic_baseline_notifications_none_24" />
-
-                <TextView
-                    android:id="@+id/tv_notification"
-                    style="@style/testNavStyleBlue"
-                    android:layout_width="wrap_content"
-                    android:layout_gravity="top"
-                    android:layout_weight="5"
-                    android:gravity="bottom|left"
-                    android:padding="15dp"
-                    android:text="@string/notification" />
-
-            </LinearLayout>
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -185,6 +155,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -232,6 +203,36 @@
                     android:gravity="bottom|left"
                     android:padding="15dp"
                     android:text="@string/tell_your_friends" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView_Notification"
+                    android:layout_width="34dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_baseline_notifications_none_24"
+                    app:tint="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_notification"
+                    style="@style/testNavStyleBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_weight="5"
+                    android:gravity="bottom|left"
+                    android:padding="15dp"
+                    android:text="@string/notification" />
+
             </LinearLayout>
 
             <LinearLayout

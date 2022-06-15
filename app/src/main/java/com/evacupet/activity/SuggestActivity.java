@@ -59,16 +59,17 @@ public class SuggestActivity extends DashboardActivity implements View.OnClickLi
         edDescription.setError(null);
         edName.setError(null);
         String description = edDescription.getText().toString().trim();
-        String name = edName.getText().toString().trim();
-        if (TextUtils.isEmpty(name)) {
-            edName.setError(getString(R.string.error_field_required));
-        } else if (TextUtils.isEmpty(description)) {
+//        String name = edName.getText().toString().trim();
+//        if (TextUtils.isEmpty(name)) {
+//            edName.setError(getString(R.string.error_field_required));
+//        } else
+            if (TextUtils.isEmpty(description)) {
             edDescription.setError(getString(R.string.error_field_required));
         } else if (TextUtils.isEmpty(ParseUser.getCurrentUser().getEmail())) {
             Toast.makeText(this, "Please update your email id.", Toast.LENGTH_SHORT).show();
         } else {
             if (ConnectionUtil.isInternetOn(this)) {
-                sendMail(description,name);
+                sendMail(description/*,name*/);
             } else {
                 Toast.makeText(this, R.string.no_internet_connection, Toast.LENGTH_LONG).show();
             }
@@ -82,12 +83,12 @@ public class SuggestActivity extends DashboardActivity implements View.OnClickLi
         }
     }
 
-    private void sendMail(String description,String name) {
+    private void sendMail(String description/*,String name*/) {
         progressDialogUtil.showDialog();
         AndroidNetworking.post("https://evacu.pet/alert-now/suggestion.php")
                 .addBodyParameter("email", ParseUser.getCurrentUser().getEmail())
                 .addBodyParameter("text", description)
-                .addBodyParameter("userFirstName", name)
+//                .addBodyParameter("userFirstName", name)
                 .addBodyParameter("flage", "1")
                 .setPriority(Priority.HIGH)
                 .build()

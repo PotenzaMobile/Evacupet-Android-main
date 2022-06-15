@@ -156,9 +156,6 @@ public class AddAnimalActivity extends DashboardActivity implements View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
-
         FrameLayout contentFrameLayout = findViewById(R.id.fl_content); //Remember this is the FrameLayout area within your activity_main.xml
         getLayoutInflater().inflate(R.layout.activity_add_animal, contentFrameLayout);
         mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);

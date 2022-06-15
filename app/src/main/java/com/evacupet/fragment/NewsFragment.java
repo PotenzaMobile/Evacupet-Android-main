@@ -144,8 +144,8 @@ public class NewsFragment extends Fragment implements View.OnClickListener {
             query.orderByDescending("createAt");
             query.findInBackground(new FindCallback<ParseObject>() {
                 public void done(List<ParseObject> objects, ParseException e) {
+                    progressDialogUtil.dismissDialog();
                     if (e == null) {
-                        progressDialogUtil.dismissDialog();
                         if (objects.size() > 0) {
                             for (ParseObject object1 : objects) {
                                 Date date = object1.getCreatedAt();

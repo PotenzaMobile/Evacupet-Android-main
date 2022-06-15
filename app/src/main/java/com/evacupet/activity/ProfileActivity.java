@@ -245,7 +245,7 @@ public class ProfileActivity extends DashboardActivity implements View.OnClickLi
         progressDialogUtil.showDialog();
         ParseUser user = ParseUser.getCurrentUser();
 
-        user.setUsername(edUsername.getText().toString());
+        user.setUsername(edUsername.getText().toString().toLowerCase());
         user.setEmail(edEmail.getText().toString());
 
         user.put("Address",edAddress.getText().toString());

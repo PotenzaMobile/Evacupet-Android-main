@@ -387,7 +387,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
     private void signUpApi() {
         ParseUser user = new ParseUser();
-        user.setUsername(edUsername.getText().toString());
+        user.setUsername(edUsername.getText().toString().toLowerCase());
         user.setEmail(edEmail.getText().toString());
         user.setPassword(edPassword.getText().toString());
         user.put("Address", edAddress.getText().toString());
